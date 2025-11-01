@@ -37,24 +37,30 @@ O projeto é dividido em duas partes principais:
 ## Estrutura do Projeto
 
 O repositório está organizado em uma estrutura de "monorepo" (dois projetos em um mesmo repositório):
-/ (pasta raiz) 
-    └── API/ (Back-end - Node.js, Express, Prisma) │ 
-        ├── prisma/  
-        ├── .env  
-        ├── server.js  
-        └── package.json 
-    └── DL-CADASTRO-USUARIOS/ (Front-end - React, Vite) 
-        ├── public/ 
-        ├── src 
-            └── main.jsx
-            └──assets/
-            └──pages
-                └──Home/
-            └──services
-            └── main.jsx
-        ├── services  
-            └── api.js (Configuração da API) 
-        ├── index.html
+
+```text
+/ React+Node
+├── API/              (Projeto Back-end)
+│   ├── prisma/       (Schema e migrações do Prisma)
+│   ├── .env          (Variáveis de ambiente, ex: DATABASE_URL)
+│   ├── server.js     (Arquivo principal do servidor Express)
+│   └── package.json
+│
+└── DL-CADASTRO-USUARIOS/ (Projeto Front-end)
+    ├── public/
+    ├── src/
+    │   ├── assets/       (Imagens, como trash.png)
+    │   ├── pages/
+    │   │   └── Home/
+    │   │       ├── index.jsx (Componente da página principal)
+    │   │       └── style.css (Estilos da página Home)
+    │   ├── services/
+    │   │   └── api.js      (Configuração do Axios/API)
+    │   ├── main.jsx        (Ponto de entrada do React)
+    │   └── index.css       (Estilos globais)
+    ├── index.html      (Arquivo HTML principal)
+    ├── vite.config.js
+    └── package.json
              
 
 
