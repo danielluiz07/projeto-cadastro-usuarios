@@ -6,7 +6,7 @@ Este é um projeto full-stack de uma aplicação de "Cadastro de Usuários". O p
 
 O objetivo desta aplicação é permitir o cadastro, a visualização e a exclusão de usuários. O front-end (React) consome a API (Node/Express) para realizar as operações CRUD (Criar, Ler, Excluir).
 
-![Screenshot da Aplicação](image.png)
+![Screenshot da Aplicação](./cadastro-de-usuarios/dl-cadastro-usuarios/image.png)
 
 ## Funcionalidades
 
